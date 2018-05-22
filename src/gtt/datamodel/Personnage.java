@@ -3,7 +3,6 @@ package gtt.datamodel;
 public class Personnage {
 	private int id;
 	private String nom;
-	private String tamere;
 
 	public String getNom() {
 		return nom;
