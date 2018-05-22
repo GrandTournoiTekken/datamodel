@@ -1,4 +1,4 @@
-package Model;
+package gtt.datamodel;
 
 import java.util.Vector;
 
