@@ -1,43 +1,17 @@
 package gtt.datamodel;
 
+import java.util.Map;
 import java.util.Vector;
 
 public class Tournoi {
 	private int id;
-	private Vector<Participant> participants;
-	private Vector<Participant> elimines;
+	private Vector<Participant> listeParticipants;
+	private Vector<Participant> listeElimines;
+	private Vector<Joueur> listeJoueurs;
 	private Participant gagnant;
+	private Map<Joueur, Participant> mapRepechage;
+	private Map<Joueur, Participant> mapParrainage;
+	private Vector<Combat> listeCombats;
 
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	public Vector<Participant> getParticipants() {
-		return participants;
-	}
-
-	public void setParticipants(Vector<Participant> participants) {
-		this.participants = participants;
-	}
-
-	public Vector<Participant> getElimines() {
-		return elimines;
-	}
-
-	public void setElimines(Vector<Participant> elimines) {
-		this.elimines = elimines;
-	}
-
-	public Participant getGagnant() {
-		return gagnant;
-	}
-
-	public void setGagnant(Participant gagnant) {
-		this.gagnant = gagnant;
-	}
 
 }
