@@ -32,4 +32,10 @@ public class GrandTournoi {
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
+
+	@Override
+	public String toString() {
+		return String.join((String.valueOf((char) 32)), System.getProperty("line.separator"), nom, ": grand tournoi n°",
+				String.valueOf(id), System.getProperty("line.separator"));
+	}
 }
